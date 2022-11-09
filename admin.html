@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./styles/side_bar.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+
+    <style>
+        body {
+
+            display: flex;
+
+        }
+        #container {
+        width: 80%;
+        border: 1px solid blue;
+        height: 700px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="side_bar">
+        <div id="side_top">
+            <img src="https://64.media.tumblr.com/b8c097af3f8db634b9907ce117d69c73/4527c891514ac554-9d/s100x200/31e4b7068cae5a8ff617dda85696d1c286b9457e.pnj" alt="">
+            <h3>PORTAL</h3>
+        </div>
+
+        <div id="side_mid">
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Overview</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Auth</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Orders</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Products</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Docs</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Help</a>
+        </div>
+
+        <div id="side_bot">
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Settings</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Downloads</a>
+            <a href="./admin.html"><span class="material-symbols-outlined"> home_app_logo </span>Downloads</a>
+        </div>
+
+    </div>
+    
+    <div id="container">
+        <div id="navbar"></div>
+        <div id="content"></div>
+    </div>
+</body>
+</html>
+<script src="./src/scripts/admin.js"></script>

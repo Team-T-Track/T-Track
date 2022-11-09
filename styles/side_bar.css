@@ -1,0 +1,28 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#side_bar {
+    width: 20%;
+    height: 700px;
+    border: 1px solid blue;
+    display: grid;
+}
+
+#side_top {
+    display: flex;
+}
+
+#side_mid {
+    display: grid;
+    border-top: 1px solid gray;
+}
+
+#side_bot {
+    display: grid;
+    border-top: 1px solid gray;
+}
