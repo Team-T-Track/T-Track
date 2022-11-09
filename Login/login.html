@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgba(246,247,248,255);
+        }
+        #container{
+            border: 1px solid rgb(218, 218, 218);
+            margin: auto;
+            text-align: center;
+            /* position:absolute; */
+            width: 30%;
+            height: 85vh;
+        }
+        #part1{
+            background-color:rgba(255, 255, 255, 0.495);
+        }
+         #part2{
+            background-color: rgba(242,245,252,255);
+        }
+        /*#part{
+            background-color: white;
+        } */
+        img{
+            width: 30%;
+            height: 20%;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        h2{
+            padding-bottom: 30px;
+            font-weight: lighter;
+            background-color:rgba(255, 255, 255, 0.495)
+        }
+        #login{
+            /* padding-top: 30px; */
+            background-color: rgba(242,245,252,255);
+            width: 80%;
+            height: 33vh;
+            margin: auto;
+            /* border: 1px solid blue; */
+        }
+        form{
+            background-color: rgba(242,245,252,255);
+        }
+        #form label{
+            background-color: rgba(242,245,252,255);
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        #form input{
+            
+            display: block;
+            width: 90%;
+            padding: 7px;
+            margin-top: 10px;
+            border: none;
+            border: 1px solid grey;
+            border-radius: 5px;
+            outline: none;
+            margin-left: 15px;
+        }
+        #form input[type="button"]{
+            margin-top: 30px;
+            background-color: #3579de;
+            color: white;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        #form input[type="button"]:hover{
+            
+            cursor: pointer;
+            background-color: #0551c4;
+        }
+        #fot{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #fot a{
+            text-decoration: none;
+        }
+        /* #button{
+            border: 1px solid black;
+            width: 60%;
+            height:auto;
+            margin: auto; */
+            
+        
+        /* #button > #g{
+            width: 20px;
+            height: 20px;
+        } */
+        .google{
+            width: 70%;
+            border: 1px solid red;
+            display: flex;
+            text-align: center;
+            margin: auto;
+            font-size: 20px;
+            justify-content: center;
+            height: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 6%;
+        }
+        .google p{
+            margin-top: 15px;
+            margin-left: 5px;
+            /* text-align: center;
+            margin: auto; */
+        }
+        .google img{
+            width: 16%;
+            height: 22px;
+            margin-bottom: 5%;
+            /* margin: auto; */
+        }
+        p{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="part1">
+            <img src="/images/T-Track-1.jpg" alt="">
+            <h2>Log into T-Track</h2>
+        </div>
+        <div id="part2">
+            <div id="login">
+                <form id="form">
+                    <label>Email</label>
+                    <input type="Email" placeholder="johnsmith@mail.com" id="email">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" id="password">
+                    <input type="button" value="Log In" id="signup_btn">
+                </form>
+            </div>
+            <p>or</p>
+            <!-- <button class="google"><img src="https://id.tmetric.com/images/google_logo.svg" alt=""> Sign up with Google</button><br> -->
+            <div class="google"><img src="https://id.tmetric.com/images/google_logo.svg" alt=""><p>Sign up with Google</p></div>
+            <div class="google"><img src="https://id.tmetric.com/images/microsoft_logo.svg" alt=""><p>Sign up with Microsoft</p></div>
+            <div class="google"><img src="https://id.tmetric.com/images/apple_logo.svg" alt=""><p>Sign up with Apple</p></div>
+            <br>
+            <div id="fot">
+                <a href="#">Can't Log In?</a>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
