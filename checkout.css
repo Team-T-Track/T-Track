@@ -1,0 +1,276 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    /* display: flex; */
+    border: 0px solid red;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+
+}
+
+#mid-nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    border: 0px solid red;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#img_div {
+    width: 15%;
+    height: 100%;
+    border: 0px solid red;
+    display: block;
+}
+
+#img_div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#side-nav {
+    width: 30%;
+    height: 100%;
+    border: 0px solid red;
+    text-align: end;
+}
+
+#language {
+    width: 40%;
+    height: 30px;
+    margin-top: 4%;
+}
+
+#INR {
+    width: 20%;
+    height: 30px;
+    margin-top: 4%;
+}
+
+#mid-body {
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    border: 0px solid red;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mid-heading {
+    width: 98%;
+    height: 50px;
+    margin: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    /* margin-top: 30px; */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#mid-data {
+    width: 98%;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50%;
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+#mid-img-logo {
+    width: 20%;
+    border: 0px solid red;
+    height: 100%;
+
+}
+
+#mid-img-logo div {
+    width: 100%;
+    height: 65px;
+    border: 0px solid red;
+
+}
+
+#mid-img-logo img {
+    width: 80%;
+    height: 80%;
+}
+
+#mid-box-data {
+    width: 60%;
+    border: 0px solid red;
+    height: 100%;
+
+}
+
+#box-data {
+    width: 98%;
+    padding: 5px;
+    height: 68%;
+    border: 0px solid red;
+}
+
+#heading-data {
+    width: 98%;
+    height: 20%;
+    border: 0px solid red;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+#mid-right-box-data {
+    width: 20%;
+    border: 0px solid red;
+    height: 100%;
+}
+
+#bottom-mid {
+    margin: auto;
+    width: 98%;
+    padding: 5px;
+    height: 20%;
+    display: flex;
+    border: 0px solid red;
+    justify-content: space-between;
+}
+
+#discount {
+    width: 20%;
+    border: 0px solid red;
+    height: 100%;
+    color: blue;
+
+}
+
+#price {
+    width: 40%;
+    border: 0px solid red;
+    height: 100%;
+}
+
+#payment-logos {
+    width: 60%;
+    height: 65px;
+    display: flex;
+    border: 0px solid red;
+    margin: auto;
+    margin-top: 25px;
+    justify-content: space-around;
+}
+
+.visa {
+    width: 20%;
+    height: 100%;
+    border: 0px solid red;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.visa img {
+    width: 100%;
+    height: 100%;
+}
+
+.wire {
+    width: 12%;
+    height: 100%;
+    border: 0px solid red;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.wire img {
+    width: 100%;
+    height: 100%;
+}
+
+.Paypal {
+    width: 15%;
+    height: 100%;
+    border: 0px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+}
+
+.Paypal img {
+    width: 95%;
+    height: 85%;
+}
+
+#select-pay {
+    width: 25%;
+    height: 80%;
+    border: 0px solid red;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+#method-pay {
+    text-align: center;
+    width: 80%;
+    height: 40px;
+}
+
+.payment-form {
+    width: 70%;
+    height: 700px;
+    margin: auto;
+    border: 0px solid red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+#Payment-heading {
+    width: 99%;
+    margin: auto;
+    padding: 5px;
+    height: 50px;
+    border: 0px solid red;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+
+#form {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 80%;
+    padding: 10px;
+    border: 0px solid red;
+    text-align: center;
+}
+
+.input-box {
+    width: 80%;
+    height: 30px;
+    margin: 3px;
+}
+
+.select-tag {
+    width: 82%;
+    height: 35px;
+    margin: 3px;
+}
+
+#plac_order_btn {
+    width: 82%;
+    height: 35px;
+    text-align: center;
+    color: white;
+    background: #11ca79;
+    border: 0px solid gray;
+    font-size: 18px;
+
+}

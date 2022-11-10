@@ -4,9 +4,10 @@ body {
 }
 
 .parent-body {
-    width: 98%;
+    width: 99.8%;
     display: flex;
-    border: 1px solid red;
+    border: 1px solid rgb(160, 167, 209);
+    background: #f5f6fe;
 
 }
 
@@ -14,10 +15,10 @@ body {
 .side-nav {
     width: 15%;
     border: 1px solid black;
-    height: 700px;
+    height: 720px;
     position: fixed;
     padding: 20px;
-    background: #f6f7f8;
+    background: white;
 }
 
 .nav-sub {
@@ -26,6 +27,7 @@ body {
     background: #c5d3e1;
     font-size: 20px;
     height: 30px;
+    cursor: pointer;
 
 }
 
@@ -66,10 +68,11 @@ body {
     margin: auto;
     border: 0px solid red;
     padding: 4px;
+    cursor: pointer;
 }
 
 .nav-div:hover {
-    background: #8a9cac;
+    background: #f1f3f4;
 }
 
 .side-nav .nav-div p i {
@@ -124,6 +127,7 @@ body {
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 5px;
+    background: white;
     /* margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -261,6 +265,13 @@ body {
     /* margin: 20px; */
     border-radius: 10px;
 }
+
+/* .b_btn {
+    width: 95%;
+    height: 30px;
+    text-align: center;
+    color: white;
+} */
 
 .price_btn_pro {
     width: 95%;
