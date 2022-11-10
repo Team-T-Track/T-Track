@@ -55,7 +55,7 @@ try{
 // const ldata= await resp.json();
 // console.log(ldata)
     const data= await response.json()
-    console.log(data)
+    console.log("data",data)
 }catch(err){
     console.log('err',err)
 }
@@ -69,81 +69,6 @@ async Login(u , p){
         username:u,
         password:p,
     };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
     const login_api= `https://masai-api-mocker.herokuapp.com/auth/login`;
@@ -167,14 +92,14 @@ return data;
 let user = new User;
 
 const Register=()=>{
-    const name= reg_form.name.value;
+    const name= reg_form.username.value;
     const email= reg_form.email.value;
     const username= reg_form.username.value;
     const password= reg_form.password.value;
     let mobile= reg_form.mobile.value;
-    const id= reg_form.username.value;
-    const description= reg_form.description.value;
-user.signUP(name,email,username,password,mobile,description,id);
+    // const id= reg_form.username.value;
+    const description= "okay";
+user.signUP(name,email,username,password,mobile,description);
 
 
 }
