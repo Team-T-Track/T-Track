@@ -6,6 +6,7 @@
 //     console.log("extra")
 // }
 
+// document.getElementById("password").addEventListener("onmousedown",myFunction);
 
 function myFunction (){
     document.getElementById("extra_right").style.display = 'block';

@@ -189,13 +189,35 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    background-color: white;
 
 }
 #extra_left{
     display:none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-left: 12px;
 }
 #extra_right{
     display: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-right: 10px;
 }
+#extra_left p{
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+#extra_left p span{
+    font-size: 16px;
+    margin: 0px 3px 0px 2px;
+    padding-top: 3px;
+}
+#extra_right p{
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+#extra_right p span{
+    font-size: 16px;
+    margin: 0px 3px 0px 2px;
+    padding-top: 3px;
+}
+
