@@ -1,28 +1,33 @@
-.material-symbols-outlined {
+
+.material-symbols-sharp {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 300,
   'GRAD' 0,
   'opsz' 48
 }
 
 #side_bar {
     width: 20%;
-    height: 700px;
+    /* height: 700px; */
     border: 1px solid blue;
     display: grid;
 }
 
-#side_top {
-    display: flex;
+#logo_img {
+    width: 70%;
+    height: 40%;
+    border: 1px solid blue;
 }
 
 #side_mid {
     display: grid;
+    border: 1px solid blue;
     border-top: 1px solid gray;
 }
 
 #side_bot {
+    border: 1px solid blue;
     display: grid;
     border-top: 1px solid gray;
 }
