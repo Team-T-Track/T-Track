@@ -1,24 +1,27 @@
 const appendData =(data, container)=>{
     container.innerHtml = null;
-    data.forEach(({ Plan_size, Team_size, Price, Plan, id
+    data.forEach(({ name, date, price, id, Plan_type, Plan_size, status
     }, index) => {
         let tr=document.createElement("tr");
         tr.className="userdata"
         
 		tr.innerHTML= `<td class="cell">${id}</td>
-	<td class="cell"><span class="truncate">${Plan}</span></td>
-	<td class="cell">Reina Brooks</td>
-	<td class="cell"><span class="cell-data">12 Oct</span><span class="note">04:23 PM</span></td>
-	<td class="cell"><span class="badge bg-danger">Cancelled</span></td>
-	<td class="cell">${Price}</td>
+	<td class="cell"><span class="truncate">${Plan_type}:(${Plan_size})</span></td>
+	<td class="cell">${name}</td>
+	<td class="cell"><span class="cell-data">${date}</span><span class="note">04:23 PM</span></td>
+	<td class="cell"><span class="badge bg-success">${status}</span></td>
+	<td class="cell">₹${price} /-</td>
 	`
+
+	//console.log(data[index].id)
+	
 	let td = document.createElement("button");
 	td.innerText = "View";
 	//td.style.border = "1px solid red";
 	td.className = "cell";
 	td.onclick = () => {
 
-		accountsPage(data[index]);
+		accountsPage(data[index].id);
 		//console.log(data[index]);
 	}
 	
@@ -26,6 +29,9 @@ const appendData =(data, container)=>{
      
     container.append(tr);
     })
+
+	// let completed_clr = document.getElementById("completed");
+	// completed_clr.style.backgroundColor = "green";
     }
 
 	//take t-body universal
@@ -35,7 +41,7 @@ const appendData =(data, container)=>{
 
 		try {
 
-			let res = await fetch(`https://floating-island-82380.herokuapp.com/orders`);
+			let res = await fetch(`https://protected-eyrie-18814.herokuapp.com/checkout`);
 
 			let data = await res.json();
 			console.log('data:', data);
@@ -70,7 +76,7 @@ const appendData =(data, container)=>{
 
 		try {
 
-			let res = await fetch(`https://floating-island-82380.herokuapp.com/orders`);
+			let res = await fetch(`https://protected-eyrie-18814.herokuapp.com/checkout`);
 
 			let data = await res.json();
 			console.log('data:', data);
@@ -115,14 +121,20 @@ const appendData =(data, container)=>{
 		}
 	}
 
-	const accountsPage = async (user_obj) => {
+	const accountsPage = async (id) => {
+		
+		let new_id = id;
+
+		let new_obj = {
+			id: new_id,
+		}
 
         try {
 
 			let res = await fetch(`https://protected-eyrie-18814.herokuapp.com/click_user`, {
 
 			     method: 'POST',
-				 body: JSON.stringify(user_obj),
+				 body: JSON.stringify(new_obj),
 
 				 headers: {
 					'Content-Type' : 'application/json',

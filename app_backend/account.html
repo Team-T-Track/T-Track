@@ -332,7 +332,7 @@
 	    <div class="app-content pt-3 p-md-3 p-lg-4">
 		    <div class="container-xl">
 			    
-			    <h1 class="app-page-title">My Account</h1>
+			    <h1 class="app-page-title">Client's Account</h1>
                 <div class="row gy-4">
 	                <div class="col-12 col-lg-6">
 		                <div class="app-card app-card-account shadow-sm d-flex flex-column align-items-start">
@@ -383,9 +383,7 @@
 								    <div class="row justify-content-between align-items-center">
 									    <div class="col-auto">
 										    <div class="item-label"><strong>Website</strong></div>
-									        <div id="acc_website" class="item-data">
-										        https://johndoewebsite.com
-									        </div>
+									        <div id="acc_websites" class="item-data"></div>
 									    </div><!--//col-->
 									    
 								    </div><!--//row-->
@@ -405,6 +403,26 @@
 									    <div class="col-auto">
 										    <div class="item-label"><strong>Country</strong></div>
 									        <div id="acc_country" class="item-data"></div>
+									    </div><!--//col-->
+									    
+								    </div><!--//row-->
+							    </div><!--//item-->
+
+								<div class="item border-bottom py-3">
+								    <div class="row justify-content-between align-items-center">
+									    <div class="col-auto">
+										    <div class="item-label"><strong>Organization Type</strong></div>
+									        <div id="acc_org" class="item-data"></div>
+									    </div><!--//col-->
+									    
+								    </div><!--//row-->
+							    </div><!--//item-->
+
+								<div class="item border-bottom py-3">
+								    <div class="row justify-content-between align-items-center">
+									    <div class="col-auto">
+										    <div class="item-label"><strong>Team Size</strong></div>
+									        <div id="acc_team" class="item-data"></div>
 									    </div><!--//col-->
 									    
 								    </div><!--//row-->
@@ -442,6 +460,27 @@
 									    
 								    </div><!--//row-->
 							    </div><!--//item-->
+
+								<div class="item border-bottom py-3">
+								    <div class="row justify-content-between align-items-center">
+									    <div class="col-auto">
+										    <div class="item-label"><strong>Plan Type</strong></div>
+									        <div id="acc_plan_type" class="item-data"></div>
+									    </div><!--//col-->
+									    
+								    </div><!--//row-->
+							    </div><!--//item-->
+
+								<div class="item border-bottom py-3">
+								    <div class="row justify-content-between align-items-center">
+									    <div class="col-auto">
+										    <div class="item-label"><strong>Subscription Type</strong></div>
+									        <div id="acc_subs" class="item-data"></div>
+									    </div><!--//col-->
+									    
+								    </div><!--//row-->
+							    </div><!--//item-->
+
 							    <div class="item border-bottom py-3">
 								    <div class="row justify-content-between align-items-center">
 									    <div class="col-auto">
@@ -451,15 +490,7 @@
 									    
 								    </div><!--//row-->
 							    </div><!--//item-->
-							    <div class="item border-bottom py-3">
-								    <div class="row justify-content-between align-items-center">
-									    <div class="col-auto">
-										    <div class="item-label"><strong>Currency</strong></div>
-									        <div id="acc_currency" class="item-data"></div>
-									    </div><!--//col-->
-									    
-								    </div><!--//row-->
-							    </div><!--//item-->
+							    
 							    <div class="item border-bottom py-3">
 								    <div class="row justify-content-between align-items-center">
 									    <div class="col-auto">
@@ -496,7 +527,20 @@
 									        <div id="acc_status" class="item-data"></div>
 									    </div><!--//col-->
 										<div class="col text-end">
-										    <a class="btn-sm app-btn-secondary" href="#">Change</a>
+										    <a id="change_status" class="btn-sm app-btn-secondary">Change</a>
+									    </div><!--//col-->
+									    
+								    </div><!--//row-->
+							    </div><!--//item-->
+
+								<div class="item border-bottom py-3">
+								    <div class="row justify-content-between align-items-center">
+									    <div class="col-auto">
+										    <div class="item-label"><strong>User Status</strong></div>
+									        <div id="acc_status" class="item-data"></div>
+									    </div><!--//col-->
+										<div class="col text-end">
+										    <a id="delete_user" class="btn-sm app-btn-secondary">Delete</a>
 									    </div><!--//col-->
 									    
 								    </div><!--//row-->
