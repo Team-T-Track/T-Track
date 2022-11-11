@@ -1,32 +1,9 @@
 
-
-// let password_mouse= document.getElementById("password");
-// password_mouse.onmousedown = () => {
-//     document.getElementById("extra_left").style.display = 'none';
-//     console.log("extra")
-// }
-
-// document.getElementById("password").addEventListener("onmousedown",myFunction);
-
-function myFunction (){
-    // document.getElementById("extra_right").style.display = 'block';
-    //     console.log("el")
-    // document.getElementById("extra_left").style.display = 'block';
-    //     console.log("el")
-}
-
-
-// let reg= document.getElementById("Register")
-let reg= document.getElementById("signup_btn")
-reg.onclick= function (){
-    Register();
-    console.log("ko")
-    };
-// let login= document.getElementById("Login");
-// login.onclick= function(){
-//     Login();
+let login= document.getElementById("signup_btn");
+login.onclick= function(){
+    Login();
   
-// }
+}
 // const profile= document.getElementById('profile');
 
 class User {
@@ -64,28 +41,58 @@ try{
             'Content-Type':'application/json',
         }
      });
-
+//  let resp= await fetch(`http://localhost:3000/profile`,{
+//         method:"POST",
+//         body:JSON.stringify(send_data),
+//         headers:{
+//             'Content-Type':'application/json',
+//         }
+//     });
+// const ldata= await resp.json();
+// console.log(ldata)
     const data= await response.json()
-    console.log(data)
+    console.log("data",data)
 }catch(err){
     console.log('err',err)
 }
 
-
+// console.log(err)
     }
 }
 
+async Login(u , p){
+    const login_data={
+        username:u,
+        password:p,
+    };
 
+    
+    const login_api= `https://masai-api-mocker.herokuapp.com/auth/login`;
+
+const response = await fetch(login_api,{
+    method:'POST',
+    body:JSON.stringify(login_data),
+    headers:{
+        'Content-Type':'application/json',
+    },
+
+    
+});
+const data = await response.json();
+console.log("login",data)
+return data;
+
+}
 }
 
 let user = new User;
 
 const Register=()=>{
-    const name= form.username.value;
-    const email= form.email.value;
-    const username= form.username.value;
-    const password= form.password.value;
-    let mobile= form.mobile.value;
+    const name= reg_form.username.value;
+    const email= reg_form.email.value;
+    const username= reg_form.username.value;
+    const password= reg_form.password.value;
+    let mobile= reg_form.mobile.value;
     // const id= reg_form.username.value;
     const description= "okay";
 user.signUP(name,email,username,password,mobile,description);

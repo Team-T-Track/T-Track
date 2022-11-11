@@ -65,10 +65,10 @@ const BusinessPlan = async () => {
         "Plan_size": time,
         "Team_size": team_size,
         "Price": Price,
-        "Plan": "Business Plan"
-
+        "Plan": "Business Plan",
+        // "time":"Monthly Plan"
     }
-    let res = await fetch(`http://localhost:3000/posts`, {
+    let res = await fetch(`https://floating-island-82380.herokuapp.com/orders`, {
         method: "POST",
         body: JSON.stringify(Send_this_data),
         headers: {
