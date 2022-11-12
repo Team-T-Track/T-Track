@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="cont1">
+            <img src="https://64.media.tumblr.com/05a3bc6332282d619f293e24fe817813/8064708285c5f9b0-bd/s400x600/7956110871fd1201c38342294d83d1e3847c4a69.pnj"
+                alt="T-Track" id="track">
+            <h2 id="header">Create Your Account</h2>
+            <div id="signup">
+                <form action="" id="form">
+                    <label>Name</label>
+                    <input type="text" placeholder="john smith" id="username">
+                    <label>Mobile</label>
+                    <input type="number" placeholder="mobile" id="mobile">
+                    <label>Email</label>
+                    <input type="Email" placeholder="johnsmith@mail.com" id="email">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" onmousedown="myFunction()">
+                    <div id="extra">
+                        <div id="extra_left">
+                            <p><span class="material-symbols-outlined">
+                                    check_circle
+                                </span>8 or more symbols</p>
+
+                            <p><span class="material-symbols-outlined">
+                                    check_circle
+                                </span>Letters a..z and A...Z</p>
+                        </div>
+                        <div id="extra_right">
+                            <p><span class="material-symbols-outlined">
+                                    check_circle
+                                </span>Digit 0..9</p>
+
+                            <p><span class="material-symbols-outlined">
+                                    check_circle
+                                </span>specail chars !@#$</p>
+                        </div>
+                    </div>
+                    <p><input type="checkbox" id="term_condition">I accept <a href="#">Terms of Service</a></p></span>
+                    <input type="button" value="Sign up" id="signup_btn">
+                </form>
+            </div><br>
+            <span></span><br>
+            <button class="google"><img src="https://id.tmetric.com/images/google_logo.svg" id="g"> Sign up with
+                Google</button><br>
+            <button class="google"><img src="https://id.tmetric.com/images/microsoft_logo.svg" id="m"> Sign up with
+                Microsoft</button><br>
+            <button class="google"><img src="https://id.tmetric.com/images/apple_logo.svg" id="a"> Sign up with
+                Apple</button>
+
+            <div id="alr">
+                <p>Already have an account?<a href="#">Log In</a></p>
+            </div>
+        </div>
+        <div id="cont2"><img src="https://id.tmetric.com/images/side_image_register.svg" id="img_side" alt=""></div>
+    </div>
+
+</body>
+
+</html>
+<script src="./script/signup.js"></script>
+<!-- <script type="module" src="/mean-part-5754/autht/login.js"></script> -->

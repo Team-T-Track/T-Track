@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Plan.css">
+    <title>Subscription Plan Page</title>
+    <link rel="stylesheet" href="./styles/Plan.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
     <script src="https://kit.fontawesome.com/57a283df89.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,7 +35,7 @@
             </div>
             <hr class="nav-line">
             <div class="nav-h">
-                <p>ANAlYZE</p>
+                <p>ANALYZE</p>
             </div>
             <div class="nav-div">
                 <p><i class="fa-solid fa-flag"></i> Reports</p>
@@ -95,17 +96,19 @@
                     </div>
                     <div id="buttons">
                         <button id="month">Monthly</button>
-                        <button id="annually">Annually</button>
-                        <button id="F_m">2 Months Free</button>
+                        <button id="annually" class="Month">Annually</button>
+                        <button id="F_m" class="Month">2 Months Free</button>
                     </div>
                     <div></div>
 
                 </div>
                 <div id="Plan_page_bottom">
                     <div id="business">
-                        <h1>Bussiness</h1>
-                        <p class="price"><strong id="plan_price"> $5&#x00b3</strong> /user /month</p>
-                        <button class="price_btn" id="Bussiness">Choose Bussiness Plan</button>
+                        <h1>Business</h1>
+                        <p class="price"><strong id="plan_price"> $5&#x00b3</strong> /User /Month</p>
+                        <a href="./checkout.html"><button class="price_btn" id="Bussiness">Choose Bussiness
+                                Plan</button></a>
+
                         <hr>
                         <p><i class="fa-solid fa-circle-check"></i> Time tracking</p>
                         <p><i class="fa-solid fa-circle-check"></i> Unlimited projects and clients</p>
@@ -127,13 +130,16 @@
                         <p><i class="fa-solid fa-circle-check"></i> Time-sync with QuickBooks</p>
                         <p><i class="fa-solid fa-circle-check"></i> Time-sync with Jira, GitLab,
                             Redmine</p>
-                        <button class="price_btn" id="Bussiness">Choose Bussiness Plan</button>
+                        <a href="./checkout.html"><button class="price_btn" id="Bussiness">Choose Bussiness
+                                Plan</button></a>
 
                     </div>
                     <div id="professional">
                         <h1>Professional</h1>
-                        <p class="price_pro"><strong id="Plan_price_prof">$4&#x00b3</strong> /user /month</p>
-                        <button class="price_btn_pro" id="Professional">Choose Professional Plan</button>
+                        <p class="price_pro"><strong id="Plan_price_prof">$4&#x00b3</strong> /User /Month</p>
+
+                        <a href="./checkout.html"><button class="price_btn_pro" id="Professional">Choose Professional
+                                Plan</button></a>
                         <hr>
                         <p><i class="fa-solid fa-circle-check"></i> Time tracking</p>
                         <p><i class="fa-solid fa-circle-check"></i> Unlimited projects and clients</p>
@@ -156,12 +162,14 @@
                         <p class="icon_dis"><i class="fa-solid fa-circle-check"></i> Time-sync with QuickBooks</p>
                         <p class="icon_dis"><i class="fa-solid fa-circle-check"></i> Time-sync with Jira, GitLab,
                             Redmine</p>
-                        <button class="price_btn_pro" id="Professional">Choose Professional Plan </button>
+                        <a href="./checkout.html"><button class="price_btn_pro" id="Professional">Choose Professional
+                                Plan</button></a>
                     </div>
                     <div id="free">
                         <h1>Free</h1>
                         <p class="price_pro"><strong>$00</strong> Up To 5 Users</p>
-                        <button class="price_btn_pro" id="Free">Choose Free Plan</button>
+
+                        <a href="./checkout.html"><button class="price_btn_pro" id="Free">Choose Free Plan</button></a>
                         <hr>
                         <p><i class="fa-solid fa-circle-check"></i> Time tracking</p>
                         <p><i class="fa-solid fa-circle-check"></i> Unlimited projects and clients</p>
@@ -186,7 +194,7 @@
                         <p class="icon_dis"><i class="fa-solid fa-circle-check"></i> Time-sync with QuickBooks</p>
                         <p class="icon_dis"><i class="fa-solid fa-circle-check"></i> Time-sync with Jira, GitLab,
                             Redmine</p>
-                        <button class="price_btn_pro" id="Free">Choose Free Plan</button>
+                        <a href="./checkout.html"><button class="price_btn_pro" id="Free">Choose Free Plan</button></a>
                     </div>
                 </div>
 
@@ -198,4 +206,4 @@
 </body>
 
 </html>
-<script src="Plan.js"></script>
+<script src="./script/Plan.js"></script>

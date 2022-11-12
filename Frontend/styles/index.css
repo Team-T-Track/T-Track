@@ -1,7 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Google Sans', sans-serif;
 }
+
 
 #navbar {
     width: 100%;
@@ -16,7 +18,7 @@ body {
 
 #nav-logo {
     width: 15%;
-    height: 80%;
+    height: 90%;
     border: 0px solid red;
     margin-left: 50px;
     margin-top: 5px;
@@ -24,25 +26,37 @@ body {
 }
 
 #logo {
-    width: 65%;
+    width: 80%;
     height: 100%;
 }
 
 #logo img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
 }
 
 #btn-Language {
     width: 30%;
-    height: 100%;
+    height: 90%;
+    background: white;
 }
 
 #btn-Language button {
-    width: 70%;
-    height: 70%;
+    width: 65%;
+    height: 65%;
     margin-top: 15px;
     margin-left: 20px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: .3s;
+
+}
+
+#btn-Language button:hover {
+    background: #41338f;
+    color: white;
+    border: 1px solid #41338f;
 }
 
 #mid-nav {
@@ -67,7 +81,8 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: black;
-
+    font-family: 'Google Sans', sans-serif;
+    transition: .3s
 }
 
 #right-nav p a:hover {
@@ -82,10 +97,26 @@ body {
     margin-top: 12px;
     font-weight: 600;
     border-radius: 5px;
+    transition: .3s;
+    background: white;
+}
+
+#right-nav button a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 450;
 }
 
 #right-nav button:hover {
     background: blue;
+    color: white;
+
+    /* transform: scale(1.03); */
+    cursor: pointer;
+}
+
+#right-nav button a:hover {
+
     color: white;
 }
 
@@ -115,12 +146,18 @@ body {
     text-decoration: none;
     line-height: 60px;
     font-size: 16px;
+    transition: .2s;
+
 }
 
 #mid-nav ul li a:hover {
-    background: rgb(187, 192, 216);
+    background: #f1f3f4;
+
     /* color: blue; */
+    transform: scale(1.03);
+
 }
+
 
 #mid-nav ul ul {
     position: absolute;
@@ -137,11 +174,15 @@ body {
 #mid-nav ul ul li {
     width: 140px;
     float: none;
+    /* height: 45px; */
     display: list-item;
     position: relative;
     line-height: 20px;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* transition: .3s; */
+    /* font-size: 16px; */
+    /* margin-top: -5px; */
 }
 
 #mid-nav ul ul li li {
@@ -150,9 +191,10 @@ body {
 
 #mid-nav ul ul ul li {
     position: relative;
-    top: -30px;
+    top: -40px;
     left: 140px;
     line-height: 20px;
+    /* transition: .3s; */
 }
 
 /* //body styling */
@@ -191,10 +233,11 @@ body {
 }
 
 .left-banner>div button {
-    height: 35px;
+    height: 39px;
     font-size: 18px;
     color: #3070f0;
     border: 1px solid gray;
+    border-radius: 4px;
 }
 
 .left-banner input {
@@ -202,7 +245,7 @@ body {
     height: 35px;
     font-size: 18px;
     margin-bottom: 10px;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 1px solid gray;
     margin-left: -2px;
 }
@@ -315,13 +358,14 @@ body {
     padding: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     cursor: pointer;
+    transition: transform .2s;
 
 }
 
 .mid_3_btn:hover {
     color: #3070f0;
     /* background: rgb(208, 234, 243); */
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 #time_tarking {
@@ -794,12 +838,12 @@ body {
 
 #img_div {
     width: 90%;
-    height: 50px;
+    height: 60px;
     border: 0px solid red;
 }
 
 #img_div img {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -883,4 +927,18 @@ body {
     font-size: 22px;
     margin: auto;
     margin-top: 15px;
+}
+
+.bottom_2 button {
+    margin-top: 16px;
+    width: 45%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.bottom_2 button i {
+    margin-right: 5px;
 }

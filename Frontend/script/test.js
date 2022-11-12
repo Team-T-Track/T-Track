@@ -10,7 +10,7 @@ const getData = async () => {
 
 }
 getData()
-
+let Total_discount_Price
 
 
 const appendData = (data, container, price_con, Total_Price) => {
@@ -29,7 +29,7 @@ const appendData = (data, container, price_con, Total_Price) => {
     let new_price = Number(data[el].Price) * Number(data[el].Team_size) * 82
     price.innerText = `Total Price: ₹${Number(data[el].Price) * Number(data[el].Team_size) * 82} / $${data[el].Price}`
     price_con.append(price)
-    let t_pr = `Tota Price with 18% GST ${new_price + (new_price * 18 / 100)}`
+    let t_pr = `Total Price with 18% GST : ₹${new_price + (new_price * 18 / 100)} /-`
     Total_Price.append(t_pr)
 
 
@@ -87,5 +87,20 @@ const PaymentForm = async () => {
 
 
 }
+
+// let discount = document.getElementById("discount")
+// discount.onclick = () => {
+//     let DSK = window.prompt("Please Enter The Discount Coupon Code!")
+//     if (DSK == "TT10") {
+//         DiscountPrice()
+//     } else {
+//         alert("Wrong Coupon Code!")
+//     }
+    
+// }
+// const DiscountPrice=()=>{
+
+// }
+
 // console.log(new_data)
 

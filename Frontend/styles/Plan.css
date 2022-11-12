@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     padding: 0%;
+    font-family: 'Google Sans', sans-serif;
 }
 
 .parent-body {
@@ -24,7 +25,7 @@ body {
 .nav-sub {
     display: flex;
     color: blue;
-    background: #c5d3e1;
+    background: #f1f3f4;
     font-size: 20px;
     height: 30px;
     cursor: pointer;
@@ -306,4 +307,37 @@ p i {
     padding: 25px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#Bussiness:hover {
+    background: blue;
+    cursor: pointer;
+}
+
+#Professional:hover {
+    background: blue;
+    cursor: pointer;
+    color: white;
+
+}
+
+#Free:hover {
+    background: blue;
+    cursor: pointer;
+    color: white;
+
+}
+
+#month:hover {
+    background: blue;
+    cursor: pointer;
+    color: white;
+
+}
+
+#buttons .Month:hover {
+    background: blue;
+    cursor: pointer;
+    color: white;
+
 }

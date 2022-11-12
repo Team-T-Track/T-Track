@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
 </head>
 
 <body>
@@ -61,7 +62,7 @@
         </div>
         <div id="bottom-mid">
             <div id="discount">
-                <h4>I have a discount coupon</h4>
+                <h4 id="dis">I have a discount coupon</h4>
             </div>
             <div id="price"></div>
 
@@ -79,11 +80,12 @@
             <img src="https://tse4.mm.bing.net/th?id=OIP.kFreWUlCI1RzDT_EzOcRwQHaB-&pid=Api&P=0" alt="">
         </div>
         <div id="select-pay">
-            <select name="select other method" id="method-pay">
+            <!-- <select name="select other method" id="method-pay">
                 <option value="">Parches order</option>
                 <option value="">web money</option>
                 <option value="">Amazon Pay</option>
-            </select>
+            </select> -->
+            <img src="https://tse4.mm.bing.net/th?id=OIP.0XHCPNfu3br0NKBVxJUQ8wHaBa&pid=Api&P=0" alt="">
         </div>
     </div>
     <div class="payment-form">
@@ -101,6 +103,8 @@
             </select>
             <br>
             <input type="email" placeholder="Email" class="input-box" id="email">
+            <br>
+            <input type="text" placeholder="Website" class="input-box" id="website">
             <br>
             <input type="text" placeholder="Frist Name" class="input-box" id="name">
             <br>
@@ -395,10 +399,10 @@
                 <option value="West Bengal">West Bengal</option>
             </select>
             <select class="select-tag" id="currency">
-                <option value="">INR - Indian Rupees</option>
-                <option value="">USD - United State Doller</option>
-                <option value="">PLN - Zloty</option>
-                <option value="">AUD - Australian Doller</option>
+                <option value="₹(INR)">INR - Indian Rupees</option>
+                <option value="$(US Dollars)">USD - United State Doller</option>
+                <!-- <option value="">PLN - Zloty</option>
+                <option value="">AUD - Australian Doller</option> -->
             </select>
             <br>
             <input type="text" placeholder="Card Number" class="input-box" id="card">
@@ -419,4 +423,4 @@
 </body>
 
 </html>
-<script src="./checkout.js"></script>
+<script src="./script//checkout.js"></script>

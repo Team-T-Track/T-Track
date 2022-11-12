@@ -1,3 +1,11 @@
+
+import { bottom } from "../bottom/bottom.js";
+import navbar from "../components/navbar.js";
+let nav = document.getElementById("navbar");
+nav.innerHTML = navbar();
+let bot = document.querySelector(".bottom")
+bot.innerHTML = bottom()
+
 let image = document.getElementById("img")
 let time_tarking = document.getElementById("time_tarking")
 time_tarking.onclick = () => {

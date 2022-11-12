@@ -1,30 +1,34 @@
 let plan_price = document.getElementById("plan_price")
 let Plan_price_prof = document.getElementById("Plan_price_prof")
-let annual_p;
-let month_p;
+let Business_Plan;
+let Professinal_Plan;
 
 // function declaretion
 let month = document.getElementById("month")
 month.onclick = () => {
     monthplan()
+    console.log("month")
 }
 
 let annually = document.getElementById("annually")
 annually.onclick = () => {
     annuallyPlan()
-}
+    console.log("year")
 
+}
+// 
 
 
 // funcitons deffinations
 const annuallyPlan = () => {
     // console.log("hello")
     plan_price.innerHTML = null;
-    plan_price.innerHTML = '$7&#x00b3'
-    annual_p = 7
+    plan_price.innerHTML = '$7&#x00b3';
+    Business_Plan = 7
     Plan_price_prof.innerHTML = null;
     Plan_price_prof.innerHTML = '$5&#x00b3'
-    month_p = 5
+    Professinal_Plan = 5
+
 
 
 }
@@ -32,20 +36,23 @@ const monthplan = () => {
     // console.log("hello")
     plan_price.innerHTML = null;
     plan_price.innerHTML = '$8&#x00b3'
-    annual_p = 8
+    Business_Plan = 8
     Plan_price_prof.innerHTML = null;
     Plan_price_prof.innerHTML = '$6&#x00b3'
-    month_p = 6
+    Professinal_Plan = 6
 
 }
 let price_btn = document.getElementById("Bussiness")
 price_btn.onclick = () => {
     BusinessPlan()
+
+
 }
 
 let Professional_btn = document.getElementById("Professional")
 Professional_btn.onclick = () => {
     ProfessionalPlan()
+
 }
 let Free = document.getElementById("Free")
 Free.onclick = () => {
@@ -60,24 +67,23 @@ const BusinessPlan = async () => {
     }
     let time;
     let Price;
-    if (annual_p == 7) {
+    if (Business_Plan == 7) {
         time = "Annual Plan"
-        Price = 7
+        Price = 7 * 12;
+        console.log(Price)
 
-    } else if (annual_p == 8) {
-        time = "Monthly Plan"
-        Price = 8
+
     } else {
-        time = "Annual Plan"
-        Price = 7
-
+        time = "Monthly Plan"
+        Price = 8;
+        console.log(Price)
     }
     let Send_this_data = {
         "Plan_size": time,
         "Team_size": team_size,
         "Price": Price,
-        "Plan": "Business Plan",
-        // "time":"Monthly Plan"
+        "Plan": "Business Plan"
+
     }
     let res = await fetch(`https://floating-island-82380.herokuapp.com/orders`, {
         method: "POST",
@@ -99,13 +105,16 @@ const ProfessionalPlan = async () => {
     }
     let time;
     let Price;
-    if (annual_p == 7) {
+    if (Professinal_Plan === 5) {
         time = "Annual Plan"
-        Price = 7
+        Price = 5 * 12;
+        console.log(Price)
 
-    } if (annual_p == 8) {
+    } else {
         time = "Monthly Plan"
-        Price = 8
+        Price = 6;
+        console.log(Price)
+
     }
     let Send_this_data = {
         "Plan_size": time,

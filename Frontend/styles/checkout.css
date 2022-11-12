@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     padding: 0%;
+    font-family: 'Google Sans', sans-serif;
 }
 
 .navbar {
@@ -12,6 +13,7 @@ body {
     margin-bottom: 30px;
 
 }
+
 
 #mid-nav {
     width: 70%;
@@ -103,8 +105,8 @@ body {
 }
 
 #mid-img-logo img {
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 90%;
 }
 
 #mid-box-data {
@@ -158,6 +160,11 @@ body {
     width: 40%;
     border: 0px solid red;
     height: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 520;
+    margin-left: 30px;
 }
 
 #payment-logos {
@@ -205,6 +212,11 @@ body {
 .Paypal img {
     width: 95%;
     height: 85%;
+}
+
+#select-pay img {
+    width: 100%;
+    height: 100%;
 }
 
 #select-pay {

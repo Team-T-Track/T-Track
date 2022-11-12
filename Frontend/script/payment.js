@@ -17,3 +17,9 @@ const appendData = (data, container) => {
 
     container.append(price)
 }
+let done = document.getElementById("done")
+done.addEventListener("click", redirect)
+
+function redirect() {
+    window.location.href = "./plan.html"
+}
