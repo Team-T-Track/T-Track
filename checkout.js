@@ -37,7 +37,14 @@ const appendData = (data, container, price_con, Total_Price) => {
 
 let Payment_Form_btn = document.getElementById("plac_order_btn")
 Payment_Form_btn.onclick = () => {
+    let OTP = window.prompt("Please Enter The OTP From Your Register Mobile Number ")
+    if (OTP == "1234") {
+        window.location.href = "./payment.html"
+    } else {
+        alert("Wrong OTP!")
+    }
     PaymentForm()
+
 }
 // let new_data;
 const PaymentForm = async () => {
