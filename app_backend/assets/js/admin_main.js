@@ -1,3 +1,12 @@
+import { navbar } from "./navbar.js"
+import { footer } from "./footer.js"
+
+let navbar_div = document.getElementById("head_nav");
+navbar_div.innerHTML = navbar();
+
+let footer_div = document.getElementById("footer_div");
+footer_div.innerHTML = footer();
+
 let total_sales = document.getElementById("total_sales");
 let total_refunds = document.getElementById("total_refunds");
 let paid_users = document.getElementById("paid_users");
