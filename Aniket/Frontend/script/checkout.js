@@ -37,11 +37,12 @@ let Payment_Form_btn = document.getElementById("plac_order_btn");
 Payment_Form_btn.onclick = () => {
     let DSK = window.prompt("Please Enter The OTP send From your Email!")
     if (DSK == "1234") {
-        window.location.href = "./payment.html"
+        // window.location.href = "./payment.html"
+        PaymentForm();
     } else {
         alert("Wrong Coupon Code!")
     }
-    PaymentForm();
+
 };
 // let new_data;
 // let dis = document.getElementById("dis")
@@ -122,6 +123,7 @@ const PaymentForm = async () => {
         }
     );
     let data = await res.json();
+    window.location.href = "./payment.html"
     // new_data = data
     console.log(data);
 };

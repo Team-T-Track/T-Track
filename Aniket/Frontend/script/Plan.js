@@ -93,6 +93,7 @@ const BusinessPlan = async () => {
         },
     })
     let data = await res.json()
+    window.location.href = "./checkout.html"
     console.log(data)
 
 
@@ -131,7 +132,9 @@ const ProfessionalPlan = async () => {
         },
     })
     let data = await res.json()
+    window.location.href = "./checkout.html"
     console.log(data)
+
 
 }
 const FreePlan = async () => {
@@ -156,6 +159,7 @@ const FreePlan = async () => {
     })
     let data = await res.json()
     console.log(data)
+    window.location.href = "./checkout.html"
 
 }
 let subscription = document.getElementById("subscription")

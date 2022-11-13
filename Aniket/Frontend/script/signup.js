@@ -1,5 +1,3 @@
-
-
 // let password_mouse= document.getElementById("password");
 // password_mouse.onmousedown = () => {
 //     document.getElementById("extra_left").style.display = 'none';
@@ -20,7 +18,7 @@ function myFunction (){
 let reg= document.getElementById("signup_btn")
 reg.onclick= function (){
     Register();
-    console.log("ko")
+    // console.log("ko")
     };
 // let login= document.getElementById("Login");
 // login.onclick= function(){
@@ -66,9 +64,17 @@ try{
      });
 
     const data= await response.json()
-    console.log(data)
+    console.log("data",data.message)
+    if(data.message==="Registration failed, user already exists"){
+        alert("Registration failed, user already exists")
+    }else{
+    alert("Registration Success");
+    window.location.href="./login.html"
+    }
+
 }catch(err){
-    console.log('err',err)
+   
+    alert("'Registration failed, user already exists'")
 }
 
 
