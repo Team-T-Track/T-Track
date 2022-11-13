@@ -1,5 +1,18 @@
+import { navbar } from "./navbar.js"
+import { footer } from "./footer.js"
+
+let navbar_div = document.getElementById("head_nav");
+navbar_div.innerHTML = navbar();
+
+let footer_div = document.getElementById("footer_div");
+footer_div.innerHTML = footer();
+
 const appendData =(data, container)=>{
+
     container.innerHtml = null;
+
+	row_loader_gif.style.display = "none";
+
     data.forEach(({ name, date, price, id, Plan_type, Plan_size, status
     }, index) => {
         let tr=document.createElement("tr");
@@ -46,7 +59,8 @@ const appendData =(data, container)=>{
 			let data = await res.json();
 			console.log('data:', data);
 
-			appendData(data, tbody);
+			//appendData(data, tbody);
+			createButtons(data.length, 5);
 			
 		} catch (error) {
 			console.log('error:', error)
@@ -54,8 +68,51 @@ const appendData =(data, container)=>{
 		}
 	}
 
-	userData();
+	const getPaginatedData = async (clicked_button, limit) => {
 
+		let res = await fetch(`https://protected-eyrie-18814.herokuapp.com/checkout?_page=${clicked_button}&_limit=${limit}`);
+
+		let data = await res.json();
+		console.log('data:', data);
+
+		appendData(data, tbody);
+	};
+
+	userData();
+	getPaginatedData(1, 5);
+
+	let paginated_btns = document.getElementById("paginate");
+
+	let row_loader_gif = document.getElementById("row_loader_gif");
+	row_loader_gif.style.width = "20%"
+
+	const createButtons = (total_data_rows, rows_per_page) => {
+
+		const buttons = Math.ceil(total_data_rows / rows_per_page)
+
+		for(let i = 1; i <= buttons; i++) {
+
+			let btn = document.createElement("button");
+
+			btn.innerText = i;
+			btn.style.margin = "2.5px";
+			btn.style.border = "1px solid green"
+			btn.style.backgroundColor = "white"
+
+			btn.onclick = () => {
+
+				tbody.innerHTML = null;
+
+				row_loader_gif.style.display = "block";
+
+				getPaginatedData(i, 5)
+			};
+
+			paginated_btns.append(btn);
+
+		}
+
+	};
 
 
 	let search_btn = document.getElementById("search_btn");
@@ -218,4 +275,23 @@ const appendData =(data, container)=>{
 		temp_link.click();
 		document.body.removeChild(temp_link);
 	}
+
+	//pagination will happen here.
+	// const getData = async (clicked_button) => {
+
+	// 	let res = await fetch(`https://protected-eyrie-18814.herokuapp.com/checkout`);
+
+	// 	let data = await res.json();
+	// 	console.log('data:', data);
+
+	// 	createButtons(data.length, 8);
+	// };
+
+	
+
+
+
+	//getPaginatedData(1, 8);
+
+
     

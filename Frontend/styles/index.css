@@ -942,3 +942,14 @@ body {
 .bottom_2 button i {
     margin-right: 5px;
 }
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+/* medium screen*/
+
+@media only screen and (min-width:500px) and (max-width:768px) {}
+
+
+
+/* small screen*/
+@media only screen and (min-width:320px) and (max-width: 499px) {}
