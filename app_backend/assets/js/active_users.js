@@ -20,7 +20,7 @@ const appendData =(data, container)=>{
 		tr.innerHTML= `<td class="cell">${name}</td>
 	<td class="cell"><span class="truncate">${email}</span></td>
 	<td class="cell">${id}</td>
-	<td class="cell"><span class="cell-data">${mobile}</span><span class="note">04:23 PM</span></td>
+	<td class="cell"><span class="cell-data">${mobile}</span></td>
 	<td class="cell"><span >logged in</span></td>
 	<td class="cell">${description} </td>
     <td class="cell">${token}</td>
@@ -40,23 +40,6 @@ const appendData =(data, container)=>{
 	//take t-body universal
 	const tbody = document.getElementById("heroku_user");
 
-	// const userData = async () => {
-
-	// 	try {
-
-	// 		let res = await fetch(`https://floating-island-82380.herokuapp.com/users`);
-
-	// 		let data = await res.json();
-	// 		console.log('data:', data);
-
-	// 		appendData(data, tbody);
-			
-	// 	} catch (error) {
-	// 		console.log('error:', error)
-			
-	// 	}
-	// }
-    // userData();
 
 	const userData = async () => {
 
@@ -131,6 +114,9 @@ const appendData =(data, container)=>{
 
 	//data not found function
 	let data_not_found = document.getElementById("data_not_found");
+	data_not_found.style.marginLeft = "13%";
+	data_not_found.style.marginTop = "-2%"
+
 
 	//let thead = document.getElementById("heroku_head");
 

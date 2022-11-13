@@ -44,7 +44,7 @@ const navbar = () => {
                                         </div><!--//col-->
                                         <div class="col">
                                             <div class="info"> 
-                                                <div class="desc">Rahul shared a file with you. Please update the data in it. </div>
+                                                <div class="desc">KL-Rahul shared a file with you. Please update the data in it. </div>
                                                 <div class="meta"> 2 hrs ago</div>
                                             </div>
                                         </div><!--//col--> 
