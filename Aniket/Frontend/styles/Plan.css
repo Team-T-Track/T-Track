@@ -349,7 +349,7 @@ p i {
     #Plan_page_bottom {
         width: 95%;
         padding: 2%;
-        border: 1px solid red;
+        border: 0px solid red;
         display: grid;
         grid-template-columns: repeat(1, 600px);
         /* height: 72%; */

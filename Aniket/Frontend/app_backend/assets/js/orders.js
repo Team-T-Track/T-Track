@@ -19,9 +19,9 @@ const appendData =(data, container)=>{
         tr.className="userdata"
         
 		tr.innerHTML= `<td class="cell">${id}</td>
-	<td class="cell"><span class="truncate">${Plan_type}:(${Plan_size})</span></td>
+	<td class="cell"><span class="truncate">${Plan_type} + (${Plan_size})</span></td>
 	<td class="cell">${name}</td>
-	<td class="cell"><span class="cell-data">${date}</span><span class="note">04:23 PM</span></td>
+	<td class="cell"><span class="cell-data">${date}</span></td>
 	<td class="cell"><span class="badge bg-success">${status}</span></td>
 	<td class="cell">₹${price} /-</td>
 	`
@@ -123,6 +123,8 @@ const appendData =(data, container)=>{
 
 	//data not found function
 	let data_not_found = document.getElementById("data_not_found");
+	data_not_found.style.marginLeft = "13%";
+	data_not_found.style.marginTop = "-2%"
 
 	//let thead = document.getElementById("heroku_head");
 

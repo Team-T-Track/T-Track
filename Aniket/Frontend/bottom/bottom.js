@@ -27,7 +27,7 @@ function bottom() {
 
     </div>
     <div class="bottom_div">
-        <div class="b_heading">
+        <div id="brow_ext" class="b_heading">
             <h3>Browser Extensions</h3>
         </div>
         <div class="icon">
@@ -70,7 +70,7 @@ function bottom() {
         <div class="icon">
 
             <div class="icon_heading">
-                <p>About TMetric</p>
+                <p>About T-Track</p>
                 <p>Terms of Service</p>
                 <p>Privacy Policy</p>
                 <p>Cookies Policy</p>
@@ -89,7 +89,7 @@ function bottom() {
         <i class="fa-brands fa-linkedin-in"></i>
         <i class="fa-brands fa-youtube"></i>
     </div>
-    <div><button><a href="../proj/loginkml.html"><i class="fa-solid fa-user"></i> Admin Login</a></button></div>
+    <div><button><a id="admin_login" href="./app_backend/admin_login.html"><i class="fa-solid fa-user"></i> Admin Login</a></button></div>
 </div>`
 }
 export { bottom };
