@@ -43,11 +43,11 @@ class User {
                 // console.log(ldata)
                 const data = await response.json();
                 console.log("data", data);
-                alert("login successful");
-                window.location.href = "plan.html"
+                // alert("login successful");
+                // window.location.href = "plan.html"
             } catch (err) {
                 console.log("err", err);
-                alert("login failed");
+                // alert("login failed");
             }
 
             // console.log(err)
@@ -72,7 +72,7 @@ class User {
             const data = await response.json();
             console.log("login", data);
             alert("login successful");
-            window.location.href = "plan.html"
+           
             return data;
         } catch (er) {
             alert("login failed");
@@ -110,7 +110,6 @@ const getProfile = async (username, token) => {
     });
     let data = await response.json();
     console.log("dataa", data);
-
     profiledata(data);
 
     //  Profiles(data)
@@ -118,7 +117,8 @@ const getProfile = async (username, token) => {
 };
 
 const profiledata = async (Data) => {
-    let name = Data.name;
+    try{
+        let name = Data.name;
     let description = Data.description;
     let email = Data.email;
     let username = Data.username;
@@ -147,7 +147,13 @@ const profiledata = async (Data) => {
         },
     });
     let dataa = await res.json();
-    console.log("data", dataa);
+    console.log("senddata", dataa);
+    window.location.href = "plan.html"
+    }catch(err) {
+        console.log("pankaj")
+    }
+    
+
 };
 
 // const Profiles= async(Data)=>{
