@@ -89,7 +89,7 @@ function bottom() {
         <i class="fa-brands fa-linkedin-in"></i>
         <i class="fa-brands fa-youtube"></i>
     </div>
-    <div><button><i class="fa-solid fa-user"></i> Admin Login</button></div>
+    <div><button><a href="../proj/loginkml.html"><i class="fa-solid fa-user"></i> Admin Login</a></button></div>
 </div>`
 }
 export { bottom };
