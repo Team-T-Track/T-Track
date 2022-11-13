@@ -11,15 +11,19 @@
     text-align: center;
     /* position:absolute; */
     width: 30%;
-    height: 85vh;
+    height: 50vh;
+    margin-top: 100px;
+    border: 0px solid red;
 }
 
 #part1 {
     background-color: rgba(255, 255, 255, 0.495);
+    border: 0px solid blue;
 }
 
 #part2 {
     background-color: rgba(242, 245, 252, 255);
+    border: 0px solid blue;
 }
 
 /*#part{
@@ -87,7 +91,7 @@ form {
 }
 
 #fot {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
     justify-content: space-around;
 }
@@ -119,6 +123,7 @@ form {
     height: 20px;
     margin-bottom: 10px;
     padding-bottom: 6%;
+    display: none;
 }
 
 .google:hover {

@@ -754,7 +754,8 @@ body {
     margin: auto;
 }
 
-.mid_l1_1 div {
+
+.mid_l1_1 > div {
     width: 15%;
     height: 70%;
     margin: auto;
@@ -766,8 +767,14 @@ body {
     font-weight: 600;
     border-radius: 10px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    /* transition: transform .2s; */
 
 }
+
+/* .mid_11_1 > div:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+} */
 
 .mid_12 {
     width: 99.8%;
@@ -907,6 +914,10 @@ body {
     font-size: 18px;
 }
 
+#brow_ext {
+    width: 100%;
+}
+
 .bottom_2 div {
     width: 20%;
     height: 80%;
@@ -943,13 +954,24 @@ body {
     margin-right: 5px;
 }
 
+.bottom_2 button #admin_login {
+    text-decoration: none;
+    color: rgb(82, 78, 78);
+}
+
+
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* medium screen*/
 
-@media only screen and (min-width:500px) and (max-width:768px) {}
+@media only screen and (min-width:500px) and (max-width:768px) {
+
+}
 
 
 
 /* small screen*/
-@media only screen and (min-width:320px) and (max-width: 499px) {}
+@media only screen and (min-width:320px) and (max-width: 499px) {
+    
+}
