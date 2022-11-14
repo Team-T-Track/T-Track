@@ -38,6 +38,7 @@ let Payment_Form_btn = document.getElementById("plac_order_btn");
 Payment_Form_btn.onclick = () => {
   PaymentForm();
 };
+    
 // let new_data;
 const PaymentForm = async () => {
   let resPP = await fetch("https://floating-island-82380.herokuapp.com/orders");

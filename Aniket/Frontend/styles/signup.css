@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 244);
+    font-family: 'Google Sans', sans-serif;
+}
+
+#container {
+    background-color: white;
+    border: none;
+    border: 1px solid rgb(214, 207, 207);
+    border-radius: 10px;
+    width: 80%;
+    height: 99vh;
+    margin: auto;
+    display: flex;
+
+}
+
+#cont1 {
+    flex: 5;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+#cont2 {
+    flex: 5;
+
+}
+
+#img_side {
+    width: 100%;
+    height: 99vh;
+    /* background-color: rgb(244, 244, 244); */
+    background-color: rgba(242, 245, 252, 255);
+
+}
+
+#track {
+    /* border: 1px solid blueviolet; */
+    width: 30%;
+    height: 20%;
+    margin-bottom: 10px;
+}
+
+#header {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    background-color: white;
+}
+
+#signup {
+    background-color: white;
+    width: 60%;
+    height: 45vh;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+form {
+    background-color: white;
+}
+
+#form label {
+    background-color: white;
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+#form>input {
+    background-color: white;
+    display: block;
+    width: 90%;
+    padding: 6px;
+    margin-top: 3px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 15px;
+}
+
+#form p #term_condition {
+    width: 50px;
+    margin: 20px 0px;
+}
+
+form p {
+    background-color: white;
+}
+
+form p a {
+    text-decoration: none;
+    background-color: white;
+}
+
+#form input[type="button"] {
+    margin-top: 5px;
+    background-color: #3579de;
+    color: white;
+    font-size: 14px;
+}
+
+#form input[type="button"]:hover {
+
+    cursor: pointer;
+    background-color: #076aff;
+}
+
+/* #g{
+            width: 18px;
+            height: 20px;
+            margin-right: 20px;
+            background-color:white;
+            
+        } */
+.google {
+    background-color: white;
+    width: 30%;
+    height: 20%;
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    border: 1px solid rgb(194, 189, 189);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    display: none;
+
+}
+
+.google:hover {
+    background-color: lightgray;
+}
+
+.google>img {
+    width: 20px;
+    margin: 0px 5px;
+}
+
+/* #g:hover{
+            background-color: lightgray;
+        }
+        #micro{
+            background-color: white;
+            width: 50%;
+            padding: 6px;
+            font-size: 14px;
+            border: none;
+            border: 1px solid rgb(194, 189, 189);
+            border-radius: 5px;
+            outline: none;
+            margin-top: 6px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        #micro:hover{
+            background-color: rgb(225, 222, 222);
+        }
+        #apple{
+            background-color: white;
+            width: 50%;
+            padding: 6px;
+            font-size: 14px;
+            border: none;
+            border: 1px solid rgb(194, 189, 189);
+            border-radius: 5px;
+            outline: none;
+            margin-top: 6px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        #apple:hover{
+            background-color: lightgray;
+        } */
+#alr p {
+    background-color: white;
+    margin-top: 20px;
+}
+
+#alr a {
+    background-color: white;
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+/* .check_box{
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+        }
+        .check_box > span{
+            
+
+        } */
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+#extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+#extra_left {
+    display: none;
+    /* border: 1px solid red; */
+    margin-left: 12px;
+}
+
+#extra_right {
+    display: none;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+
+#extra_left p {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+#extra_left p span {
+    font-size: 16px;
+    margin: 0px 3px 0px 2px;
+    padding-top: 3px;
+}
+
+#extra_right p {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+#extra_right p span {
+    font-size: 16px;
+    margin: 0px 3px 0px 2px;
+    padding-top: 3px;
+}
