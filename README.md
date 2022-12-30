@@ -1,7 +1,7 @@
 ## T-Track (Saas Product Website)
 #### T-Track is a SaaS Product website that sells Productivity Software.
 ---
-This is a collaborative Project created by Kamal, Aniket, Pankaj and Vibhor in a 5 days.
+This is a collaborative Project created by Kamal, Aniket, Pankaj and Vibhor in a 5 days with a dedicated Admin Panel with CRUD opeartions.   
 Deployed Link -> https://t-track.vercel.app/index.html
 #### Tech stack used in the Project:
 1. Heroku (Database)
